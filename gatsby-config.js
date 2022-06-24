@@ -1,3 +1,4 @@
+
 const siteMetadata = require('./site-metadata.json');
 module.exports = {
     pathPrefix: '/',
@@ -12,17 +13,6 @@ module.exports = {
                 name: 'pages',
                 path: `${__dirname}/src/pages`
             }
-        },
-        {
-            resolve: 'gatsby-transformer-remark',
-            options: {
-                plugins: ['gatsby-remark-prismjs-copy-button', 'gatsby-remark-prismjs'],
-            },
-        },
-        {
-            resolve: 'gatsby-remark-code-buttons',
-
-
         },
         {
             resolve: 'gatsby-plugin-disqus',
