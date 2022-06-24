@@ -1,4 +1,3 @@
-
     <ul>
         <li><a href="https://syntax-highlight.netlify.app/showcase/">/showcase/</a></li>
         <li><a href="https://syntax-highlight.netlify.app/privacy-policy/">/privacy-policy/</a></li>

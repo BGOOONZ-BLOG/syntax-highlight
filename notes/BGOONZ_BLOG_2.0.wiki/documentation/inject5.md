@@ -85,109 +85,118 @@ Inject analytics or other scripts into the HTML of your site.
 
 -   before `</head>`
 
-    gtag-n-firebase
+        gtag-n-firebase
 
-    ```
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
-    <!-- End Google Tag Manager -->
-    <!--FIREBASE----------------------------------------------------------------------->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.8.1/firebase-app.js">
-</script>
+        ```
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
+        <!-- End Google Tag Manager -->
+        <!--FIREBASE----------------------------------------------------------------------->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.8.1/firebase-app.js">
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.8.1/firebase-analytics.js">
-</script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js">
-</script>
-
-    <!--Google Tag----------------------------------------------------------------------->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
-</script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-M9B63M34E1');
     </script>
-    ```
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/8.8.1/firebase-analytics.js">
+
+    </script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js">
+
+    </script>
+
+        <!--Google Tag----------------------------------------------------------------------->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
+
+    </script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-M9B63M34E1');
+        </script>
+        ```
 
 -   before `</body>`
 
-    gtag-in-body
+        gtag-in-body
 
-    ```
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden">
-</iframe>
-<br>
-</noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    ```
+        ```
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+
+    <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+        height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+    <br>
+    </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        ```
 
 -   before `</head>`
 
-    original-analytics
+        original-analytics
 
-    ```
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-</script>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-<iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden">
-</iframe>
-<br>
-</noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        ```
+        <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
 
-    <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
-</script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-4W5MG3DG4T');
     </script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+    <iframe style="resize:both; overflow:scroll;"  sandbox="allow-scripts"  src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+        height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+    <br>
+    </noscript>
+        <!-- End Google Tag Manager (noscript) -->
 
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-</script>
-    ```
+        <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
+
+    </script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-4W5MG3DG4T');
+        </script>
+
+        <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+
+    </script>
+        ```
 
 -   before `</body>`
 
-    goback
+        goback
 
-    ```
-    <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
-          <?php
-            $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-            echo "<a href='$url'>
-</a>
-    ```
+        ```
+        <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
+              <?php
+                $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+                echo "<a href='$url'>
+
+    </a>
+        ```
 
 -   before `</head>`
 
@@ -445,22 +454,24 @@ Inject analytics or other scripts into the HTML of your site.
 
 -   before `</body>`
 
-    stackbit-widget
+        stackbit-widget
 
-    ```
-    <script src="https://widget.stackbit.com/init.js" id="stackbit-widget-init" data-stackbit-project-id="609b2d7c71a5dd0016f36326">
-</script>
-    ```
+        ```
+        <script src="https://widget.stackbit.com/init.js" id="stackbit-widget-init" data-stackbit-project-id="609b2d7c71a5dd0016f36326">
+
+    </script>
+        ```
 
 -   before `</body>`
 
-    addthis
+        addthis
 
-    ```
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
-</script>
-    ```
+        ```
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+
+    </script>
+        ```
 
 -   before `</head>`
 
@@ -525,55 +536,59 @@ Inject analytics or other scripts into the HTML of your site.
 
 -   before `</head>`
 
-    google-adds
+        google-adds
 
-    ```
-    <!-- Global site tag (gtag.js) - Google Ads: 389525629 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-389525629">
-</script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        ```
+        <!-- Global site tag (gtag.js) - Google Ads: 389525629 -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-389525629">
 
-      gtag('config', 'AW-389525629');
     </script>
-    <!-- Event snippet for Subscribe conversion page -->
-    <script>
-      gtag('event', 'conversion', {'send_to': 'AW-389525629/_TJRCMyNpIsDEP3g3rkB'});
-    </script>
-    ```
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'AW-389525629');
+        </script>
+        <!-- Event snippet for Subscribe conversion page -->
+        <script>
+          gtag('event', 'conversion', {'send_to': 'AW-389525629/_TJRCMyNpIsDEP3g3rkB'});
+        </script>
+        ```
 
 -   before `</body>`
 
-    google-search
+        google-search
 
-    ```
-    <script async src="https://cse.google.com/cse.js?cx=54896af6e2f16ea45">
-</script>
-    <div class="gcse-search">
-</div>
-    ```
+        ```
+        <script async src="https://cse.google.com/cse.js?cx=54896af6e2f16ea45">
 
--   before `</head>`
-
-    gs-head-script
-
-    ```
-    <script async src="https://cse.google.com/cse.js?cx=54896af6e2f16ea45">
-</script>
-    ```
+    </script>
+        <div class="gcse-search">
+    </div>
+        ```
 
 -   before `</head>`
 
-    jquery
+        gs-head-script
 
-    ```
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous">
-</script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous">
-</script>
-    ```
+        ```
+        <script async src="https://cse.google.com/cse.js?cx=54896af6e2f16ea45">
+
+    </script>
+        ```
+
+-   before `</head>`
+
+        jquery
+
+        ```
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous">
+
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous">
+    </script>
+        ```
 
 -   before `</body>`
 
@@ -657,59 +672,61 @@ Inject analytics or other scripts into the HTML of your site.
 
 -   before `</head>`
 
-    blm
+        blm
 
-    ```
-    <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
+        ```
+        <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
-</script>
+        <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
 
-    <!-- Initialise MakerBadge with options -->
-
-    <script>
-      BLMBadge.init({
-           layout:1,
-           theme:'dark',
-           promoText : 'Send a donation '+String.fromCodePoint(0x2192),
-           promoLink : 'https://minnesotafreedomfund.org/',
-           message : 'To be silent is to be complicit. Black lives matter.',
-           title : '#BlackLivesMatter',
-           imageAlt: "Black Lives Matter Badge"
-    })
     </script>
-    ```
+
+        <!-- Initialise MakerBadge with options -->
+
+        <script>
+          BLMBadge.init({
+               layout:1,
+               theme:'dark',
+               promoText : 'Send a donation '+String.fromCodePoint(0x2192),
+               promoLink : 'https://minnesotafreedomfund.org/',
+               message : 'To be silent is to be complicit. Black lives matter.',
+               title : '#BlackLivesMatter',
+               imageAlt: "Black Lives Matter Badge"
+        })
+        </script>
+        ```
 
 -   before `</head>`
 
-    netlify-identity
+        netlify-identity
 
-    ```
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
-</script>
-    ```
+        ```
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
+
+    </script>
+        ```
 
 -   before `</head>`
 
-    netlify-identity
+        netlify-identity
 
-    ```
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
-</script>
+        ```
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js">
 
+    </script>
 
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
+        <script>
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+              if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                  document.location.href = "/admin/";
+                });
+              }
             });
           }
-        });
-      }
-    </script>
-    ```
+        </script>
+        ```
 
 -   before `</head>`
 

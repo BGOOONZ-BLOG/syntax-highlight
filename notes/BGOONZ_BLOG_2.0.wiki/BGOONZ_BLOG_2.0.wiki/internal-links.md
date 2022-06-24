@@ -1,10 +1,6 @@
-
-
-
-
 <details>
 
-<summary>  Website Links </summary>   
+<summary>  Website Links </summary>
 
 https://syntax-highlight.netlify.app/
 https://syntax-highlight.netlify.app/javascript

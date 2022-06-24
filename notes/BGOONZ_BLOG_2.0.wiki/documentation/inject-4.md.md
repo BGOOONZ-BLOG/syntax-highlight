@@ -1,99 +1,108 @@
--   ```
-      <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
+-   ````
+          <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-      <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
-</script>
+          <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
+    </script>
 
-      <!-- Initialise MakerBadge with options -->
+          <!-- Initialise MakerBadge with options -->
 
-      <script>
-        BLMBadge.init({
-             layout:1,
-             theme:'dark',
-             promoText : 'Send a donation '+String.fromCodePoint(0x2192),
-             promoLink : 'https://minnesotafreedomfund.org/',
-             message : 'To be silent is to be complicit. Black lives matter.',
-             title : '#BlackLivesMatter',
-             imageAlt: "Black Lives Matter Badge"
-      })
-      </script>
-    ```
+          <script>
+            BLMBadge.init({
+                 layout:1,
+                 theme:'dark',
+                 promoText : 'Send a donation '+String.fromCodePoint(0x2192),
+                 promoLink : 'https://minnesotafreedomfund.org/',
+                 message : 'To be silent is to be complicit. Black lives matter.',
+                 title : '#BlackLivesMatter',
+                 imageAlt: "Black Lives Matter Badge"
+          })
+          </script>
+        ```
 
-    Remove
+        Remove
+
+    ````
 
 -   before `</body>`
 
-    addthis
+        addthis
 
-    ```
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
-</script>
+        ```
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
-</script>
-    ```
+    </script>
 
-    Remove
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+
+    </script>
+        ```
+
+        Remove
 
 -   before `</head>`
 
-    gtag-n-firebase
+        gtag-n-firebase
 
-    ```
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
-    <!-- End Google Tag Manager -->
-    <!--FIREBASE----------------------------------------------------------------------->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.8.1/firebase-app.js">
-</script>
+        ```
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
+        <!-- End Google Tag Manager -->
+        <!--FIREBASE----------------------------------------------------------------------->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.8.1/firebase-app.js">
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.8.1/firebase-analytics.js">
-</script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js">
-</script>
-
-    <!--Google Tag----------------------------------------------------------------------->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
-</script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-M9B63M34E1');
     </script>
-    ```
 
-    Remove
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/8.8.1/firebase-analytics.js">
+
+    </script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js">
+
+    </script>
+
+        <!--Google Tag----------------------------------------------------------------------->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
+
+    </script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-M9B63M34E1');
+        </script>
+        ```
+
+        Remove
 
 -   before `</body>`
 
-    gtag-in-body
+        gtag-in-body
 
-    ```
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden">
-</iframe>
-<br>
-</noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    ```
+        ```
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
 
-    Remove
+    <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+        height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+    <br>
+    </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        ```
+
+        Remove
 
 -   before `</head>`
 
@@ -143,58 +152,62 @@
 
 -   before `</head>`
 
-    original-analytics
+        original-analytics
 
-    ```
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-</script>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden">
-</iframe>
-<br>
-</noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        ```
+        <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
 
-    <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
-</script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-4W5MG3DG4T');
     </script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+    <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+        height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+    <br>
+    </noscript>
+        <!-- End Google Tag Manager (noscript) -->
 
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-</script>
-    ```
+        <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
 
-    Remove
+    </script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-4W5MG3DG4T');
+        </script>
+
+        <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+
+    </script>
+        ```
+
+        Remove
 
 -   before `</body>`
 
-    goback
+        goback
 
-    ```
-    <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
-          <?php
-            $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-            echo "<a href='$url'>
-</a>
-    ```
+        ```
+        <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
+              <?php
+                $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+                echo "<a href='$url'>
 
-    Remove
+    </a>
+        ```
+
+        Remove
 
 -   before `</head>`
 
@@ -574,138 +587,139 @@
 
 -   before `</body>`
 
-    scroll2topsvg
+        scroll2topsvg
 
-    ```
-    <!-- google-site-verification: googled2b1865dedd985a4.html -->
+        ```
+        <!-- google-site-verification: googled2b1865dedd985a4.html -->
 
-    <script async>
+        <script async>
 
-        // Set a variable for our button element.
-        const scrollToTopButton = document.getElementById('js-top');
+            // Set a variable for our button element.
+            const scrollToTopButton = document.getElementById('js-top');
 
-        // Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
-        const scrollFunc = () => {
-            // Get the current scroll value
-            let y = window.scrollY;
+            // Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
+            const scrollFunc = () => {
+                // Get the current scroll value
+                let y = window.scrollY;
 
-            // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
-            if (y > 0) {
-                scrollToTopButton.className = "top-link show";
-            } else {
-                scrollToTopButton.className = "top-link hide";
-            }
-        };
-
-        window.addEventListener("scroll", scrollFunc);
-
-        const scrollToTop1 = () => {
-            // Let's set a variable for the number of pixels we are from the top of the document.
-            const c = document.documentElement.scrollTop || document.body.scrollTop;
-
-            // If that number is greater than 0, we'll scroll back to 0, or the top of the document.
-            // We'll also animate that scroll with requestAnimationFrame:
-            // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
-            if (c > 0) {
-                window.requestAnimationFrame(scrollToTop1);
-                // ScrollTo takes an x and a y coordinate.
-                // Increase the '10' value to get a smoother/slower scroll!
-                window.scrollTo(0, c - c / 10);
-            }
-        };
-
-        // When the button is clicked, run our ScrolltoTop function above!
-        scrollToTopButton.onclick = function (e) {
-            e.preventDefault();
-            scrollToTop1();
-        }
-
-    </script>
-
-    <div>
-    <a class="top-link hide" href="" id="js-top">
-        <span class="screen-reader-text">Back to top</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
-<path d="M12 6H0l6-6z"/>
-</svg>
-    </a>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
-
-    </script>
-    <script type="text/javascript">
-        function hideLoader() {
-            $('#loading').hide();
-        }
-        $(window).ready(hideLoader);
-        // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
-        setTimeout(hideLoader, 10 * 1000);
-        $(window).on('beforeunload', function () {
-            $(window).scrollTop(0);
-        });
-    </script>
-
-    <script>
-        $(window).scroll(function () {
-            $("#back").stop().animate({
-                "marginTop": ($(window).scrollTop()) + "px",
-                "marginLeft": ($(window).scrollLeft()) + "px"
-            }, "slow");
-        });
-    </script>
-    <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            console.log('DOM fully loaded and parsed');
-            const scrollToTop = () => {
-                const c = document.documentElement.scrollTop || document.body.scrollTop;
-                if (c > 0) {
-                    window.requestAnimationFrame(scrollToTop);
-                    window.scrollTo(0, c - c / 8);
+                // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
+                if (y > 0) {
+                    scrollToTopButton.className = "top-link show";
+                } else {
+                    scrollToTopButton.className = "top-link hide";
                 }
             };
-            scrollToTop();
-        });
 
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
+            window.addEventListener("scroll", scrollFunc);
 
-    </script>
-    <script type="text/javascript">
-        function hideLoader() {
-            $('#loading').hide();
-        }
-        $(window).ready(hideLoader);
-        // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
-        setTimeout(hideLoader, 10 * 1000);
-        $(window).on('beforeunload', function () {
-            $(window).scrollTop(0);
-        });
-    </script>
-
-    <script>
-        $(window).scroll(function () {
-            $("#back").stop().animate({
-                "marginTop": ($(window).scrollTop()) + "px",
-                "marginLeft": ($(window).scrollLeft()) + "px"
-            }, "slow");
-        });
-    </script>
-    <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            console.log('DOM fully loaded and parsed');
             const scrollToTop1 = () => {
+                // Let's set a variable for the number of pixels we are from the top of the document.
                 const c = document.documentElement.scrollTop || document.body.scrollTop;
+
+                // If that number is greater than 0, we'll scroll back to 0, or the top of the document.
+                // We'll also animate that scroll with requestAnimationFrame:
+                // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
                 if (c > 0) {
                     window.requestAnimationFrame(scrollToTop1);
-                    window.scrollTo(0, c - c / 8);
+                    // ScrollTo takes an x and a y coordinate.
+                    // Increase the '10' value to get a smoother/slower scroll!
+                    window.scrollTo(0, c - c / 10);
                 }
             };
-            scrollToTop1();
-        });
 
-    </script>
-    ```
+            // When the button is clicked, run our ScrolltoTop function above!
+            scrollToTopButton.onclick = function (e) {
+                e.preventDefault();
+                scrollToTop1();
+            }
 
-    Remove
+        </script>
+
+        <div>
+        <a class="top-link hide" href="" id="js-top">
+            <span class="screen-reader-text">Back to top</span>  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+
+    <path d="M12 6H0l6-6z"/>
+    </svg>
+        </a>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
+
+        </script>
+        <script type="text/javascript">
+            function hideLoader() {
+                $('#loading').hide();
+            }
+            $(window).ready(hideLoader);
+            // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+            setTimeout(hideLoader, 10 * 1000);
+            $(window).on('beforeunload', function () {
+                $(window).scrollTop(0);
+            });
+        </script>
+
+        <script>
+            $(window).scroll(function () {
+                $("#back").stop().animate({
+                    "marginTop": ($(window).scrollTop()) + "px",
+                    "marginLeft": ($(window).scrollLeft()) + "px"
+                }, "slow");
+            });
+        </script>
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                console.log('DOM fully loaded and parsed');
+                const scrollToTop = () => {
+                    const c = document.documentElement.scrollTop || document.body.scrollTop;
+                    if (c > 0) {
+                        window.requestAnimationFrame(scrollToTop);
+                        window.scrollTo(0, c - c / 8);
+                    }
+                };
+                scrollToTop();
+            });
+
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async defer>
+
+        </script>
+        <script type="text/javascript">
+            function hideLoader() {
+                $('#loading').hide();
+            }
+            $(window).ready(hideLoader);
+            // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+            setTimeout(hideLoader, 10 * 1000);
+            $(window).on('beforeunload', function () {
+                $(window).scrollTop(0);
+            });
+        </script>
+
+        <script>
+            $(window).scroll(function () {
+                $("#back").stop().animate({
+                    "marginTop": ($(window).scrollTop()) + "px",
+                    "marginLeft": ($(window).scrollLeft()) + "px"
+                }, "slow");
+            });
+        </script>
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                console.log('DOM fully loaded and parsed');
+                const scrollToTop1 = () => {
+                    const c = document.documentElement.scrollTop || document.body.scrollTop;
+                    if (c > 0) {
+                        window.requestAnimationFrame(scrollToTop1);
+                        window.scrollTo(0, c - c / 8);
+                    }
+                };
+                scrollToTop1();
+            });
+
+        </script>
+        ```
+
+        Remove
 
 -   before `</body>`
 
@@ -763,15 +777,16 @@
 
 -   before `</head>`
 
-    add-this-suggested-pages
+        add-this-suggested-pages
 
-    ```
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
-</script>
-    ```
+        ```
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 
-    Remove
+    </script>
+        ```
+
+        Remove
 
 -   before `</body>`
 
@@ -793,43 +808,45 @@
 
 -   before `</head>`
 
-    analytics
+        analytics
 
-    ```
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L">
-</script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        ```
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-F56YP2Y17L">
 
-      gtag('config', 'G-F56YP2Y17L');
     </script>
-    ```
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-    Remove
+          gtag('config', 'G-F56YP2Y17L');
+        </script>
+        ```
+
+        Remove
 
 -   before `</head>`
 
-    search-script
+        search-script
 
-    ```
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
-</script>
-    <script type="text/javascript">
-      algoliasearchNetlify({
-        appId: 'O6OT9G9U8Z',
-        apiKey: 'b0cb3d390176e1ff4bd1ecb12fc15730',
-        siteId: 'a1b7ee1a-11a7-4bd2-a341-2260656e216f',
-        branch: 'master',
-        selector: 'div#search',
-      });
+        ```
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+
     </script>
-    ```
+        <script type="text/javascript">
+          algoliasearchNetlify({
+            appId: 'O6OT9G9U8Z',
+            apiKey: 'b0cb3d390176e1ff4bd1ecb12fc15730',
+            siteId: 'a1b7ee1a-11a7-4bd2-a341-2260656e216f',
+            branch: 'master',
+            selector: 'div#search',
+          });
+        </script>
+        ```
 
-    Remove
+        Remove
 
 -   before `</head>`
 
@@ -860,17 +877,18 @@
 
 -   before `</body>`
 
-    simpleanalytics
+        simpleanalytics
 
-    ```
-    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js">
-</script>
-    <noscript>
-<img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
-</noscript>
-    ```
+        ```
+        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js">
 
-    Remove
+    </script>
+        <noscript>
+    <img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
+    </noscript>
+        ```
+
+        Remove
 
 -   before `</head>`
 

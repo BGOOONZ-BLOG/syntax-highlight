@@ -8,104 +8,112 @@ Inject analytics or other scripts into the HTML of your site.
 
 -   before `</body>`
 
-    blm
+        blm
 
-    ```
-    <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
+        ```
+        <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
-</script>
+        <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
 
-    <!-- Initialise MakerBadge with options -->
-
-    <script>
-      BLMBadge.init({
-           layout:1,
-           theme:'dark',
-           promoText : 'Send a donation '+String.fromCodePoint(0x2192),
-           promoLink : 'https://minnesotafreedomfund.org/',
-           message : 'To be silent is to be complicit. Black lives matter.',
-           title : '#BlackLivesMatter',
-           imageAlt: "Black Lives Matter Badge"
-    })
     </script>
-    ```
 
-    Remove
+        <!-- Initialise MakerBadge with options -->
+
+        <script>
+          BLMBadge.init({
+               layout:1,
+               theme:'dark',
+               promoText : 'Send a donation '+String.fromCodePoint(0x2192),
+               promoLink : 'https://minnesotafreedomfund.org/',
+               message : 'To be silent is to be complicit. Black lives matter.',
+               title : '#BlackLivesMatter',
+               imageAlt: "Black Lives Matter Badge"
+        })
+        </script>
+        ```
+
+        Remove
 
 -   before `</body>`
 
-    addthis
+        addthis
 
-    ```
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
-</script>
+        ```
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
-</script>
-    ```
+    </script>
 
-    Remove
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+
+    </script>
+        ```
+
+        Remove
 
 -   before `</head>`
 
-    gtag-n-firebase
+        gtag-n-firebase
 
-    ```
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
-    <!-- End Google Tag Manager -->
-    <!--FIREBASE----------------------------------------------------------------------->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.8.1/firebase-app.js">
-</script>
+        ```
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
+        <!-- End Google Tag Manager -->
+        <!--FIREBASE----------------------------------------------------------------------->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.8.1/firebase-app.js">
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.8.1/firebase-analytics.js">
-</script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js">
-</script>
-
-    <!--Google Tag----------------------------------------------------------------------->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
-</script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-M9B63M34E1');
     </script>
-    ```
 
-    Remove
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/8.8.1/firebase-analytics.js">
+
+    </script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js">
+
+    </script>
+
+        <!--Google Tag----------------------------------------------------------------------->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
+
+    </script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-M9B63M34E1');
+        </script>
+        ```
+
+        Remove
 
 -   before `</body>`
 
-    gtag-in-body
+        gtag-in-body
 
-    ```
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden">
-</iframe>
-<br>
-</noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    ```
+        ```
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
 
-    Remove
+    <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+        height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+    <br>
+    </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        ```
+
+        Remove
 
 -   before `</head>`
 
@@ -155,58 +163,62 @@ Inject analytics or other scripts into the HTML of your site.
 
 -   before `</head>`
 
-    original-analytics
+        original-analytics
 
-    ```
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-</script>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden">
-</iframe>
-<br>
-</noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        ```
+        <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
 
-    <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
-</script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-4W5MG3DG4T');
     </script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+    <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+        height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+    <br>
+    </noscript>
+        <!-- End Google Tag Manager (noscript) -->
 
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-</script>
-    ```
+        <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
 
-    Remove
+    </script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-4W5MG3DG4T');
+        </script>
+
+        <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+
+    </script>
+        ```
+
+        Remove
 
 -   before `</body>`
 
-    goback
+        goback
 
-    ```
-    <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
-          <?php
-            $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-            echo "<a href='$url'>
-</a>
-    ```
+        ```
+        <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
+              <?php
+                $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+                echo "<a href='$url'>
 
-    Remove
+    </a>
+        ```
+
+        Remove
 
 -   before `</head>`
 
@@ -519,51 +531,54 @@ Inject analytics or other scripts into the HTML of your site.
 
 -   before `</head>`
 
-    hubspot
+        hubspot
 
-    ```
-    <!--[if lte IE 8]>
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js">
-</script>
-    <![endif]-->
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js">
-</script>
-    <script>
-      hbspt.forms.create({
-    	region: "na1",
-    	portalId: "20684171",
-    	formId: "8fae351b-d575-47eb-a789-27f6a6b2c9d1"
-    });
+        ```
+        <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js">
+
     </script>
-    ```
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js">
+    </script>
+        <script>
+          hbspt.forms.create({
+        	region: "na1",
+        	portalId: "20684171",
+        	formId: "8fae351b-d575-47eb-a789-27f6a6b2c9d1"
+        });
+        </script>
+        ```
 
-    Remove
+        Remove
 
 -   before `</head>`
 
-    hubspot-analytics
+        hubspot-analytics
 
-    ```
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20684171.js">
-</script>
-    <!-- End of HubSpot Embed Code -->
-    ```
+        ```
+        <!-- Start of HubSpot Embed Code -->
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20684171.js">
 
-    Remove
+    </script>
+        <!-- End of HubSpot Embed Code -->
+        ```
+
+        Remove
 
 -   before `</body>`
 
-    typeform
+        typeform
 
-    ```
-    <div data-tf-popover="zL20wTbS" data-tf-custom-icon="https://images.typeform.com/images/bDK2t34aaS3Z" data-tf-button-color="#00183E" data-tf-notification-days="7" data-tf-chat style="all:unset;">
-</div>
-<script src="//embed.typeform.com/next/embed.js">
-</script>
-    ```
+        ```
+        <div data-tf-popover="zL20wTbS" data-tf-custom-icon="https://images.typeform.com/images/bDK2t34aaS3Z" data-tf-button-color="#00183E" data-tf-notification-days="7" data-tf-chat style="all:unset;">
 
-    Remove
+    </div>
+    <script src="//embed.typeform.com/next/embed.js">
+    </script>
+        ```
+
+        Remove
 
 [Learn more about snippet injection in the docs](https://www.netlify.com/docs/inject-analytics-snippets)
 

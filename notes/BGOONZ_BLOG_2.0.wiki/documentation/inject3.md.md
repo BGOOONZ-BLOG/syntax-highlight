@@ -4,104 +4,112 @@ Inject analytics or other scripts into the HTML of your site.
 
 -   before `</body>`
 
-    blm
+        blm
 
-    ```
-    <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
+        ```
+        <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
-</script>
+        <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
 
-    <!-- Initialise MakerBadge with options -->
-
-    <script>
-      BLMBadge.init({
-           layout:1,
-           theme:'dark',
-           promoText : 'Send a donation '+String.fromCodePoint(0x2192),
-           promoLink : 'https://minnesotafreedomfund.org/',
-           message : 'To be silent is to be complicit. Black lives matter.',
-           title : '#BlackLivesMatter',
-           imageAlt: "Black Lives Matter Badge"
-    })
     </script>
-    ```
 
-    Remove
+        <!-- Initialise MakerBadge with options -->
+
+        <script>
+          BLMBadge.init({
+               layout:1,
+               theme:'dark',
+               promoText : 'Send a donation '+String.fromCodePoint(0x2192),
+               promoLink : 'https://minnesotafreedomfund.org/',
+               message : 'To be silent is to be complicit. Black lives matter.',
+               title : '#BlackLivesMatter',
+               imageAlt: "Black Lives Matter Badge"
+        })
+        </script>
+        ```
+
+        Remove
 
 -   before `</body>`
 
-    addthis
+        addthis
 
-    ```
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
-</script>
+        ```
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
-</script>
-    ```
+    </script>
 
-    Remove
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+
+    </script>
+        ```
+
+        Remove
 
 -   before `</head>`
 
-    gtag-n-firebase
+        gtag-n-firebase
 
-    ```
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
-    <!-- End Google Tag Manager -->
-    <!--FIREBASE----------------------------------------------------------------------->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.8.1/firebase-app.js">
-</script>
+        ```
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
+        <!-- End Google Tag Manager -->
+        <!--FIREBASE----------------------------------------------------------------------->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/8.8.1/firebase-app.js">
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.8.1/firebase-analytics.js">
-</script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js">
-</script>
-
-    <!--Google Tag----------------------------------------------------------------------->
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
-</script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-M9B63M34E1');
     </script>
-    ```
 
-    Remove
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="/__/firebase/8.8.1/firebase-analytics.js">
+
+    </script>
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/init.js">
+
+    </script>
+
+        <!--Google Tag----------------------------------------------------------------------->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9B63M34E1">
+
+    </script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-M9B63M34E1');
+        </script>
+        ```
+
+        Remove
 
 -   before `</body>`
 
-    gtag-in-body
+        gtag-in-body
 
-    ```
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden">
-</iframe>
-<br>
-</noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    ```
+        ```
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
 
-    Remove
+    <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+        height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+    <br>
+    </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        ```
+
+        Remove
 
 -   before `</head>`
 
@@ -151,270 +159,276 @@ Inject analytics or other scripts into the HTML of your site.
 
 -   before `</head>`
 
-    original-analytics
+        original-analytics
 
-    ```
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-</script>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-<iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
-    height="0" width="0" style="display:none;visibility:hidden">
-</iframe>
-<br>
-</noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        ```
+        <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
 
-    <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
-</script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-4W5MG3DG4T');
     </script>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5S5XXNR');</script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+    <iframe  style="-webkit-transform:scale(0.7);-moz-transform-scale(0.7); src="https://www.googletagmanager.com/ns.html?id=GTM-5S5XXNR"
+        height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+    <br>
+    </noscript>
+        <!-- End Google Tag Manager (noscript) -->
 
-    <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-</script>
-    ```
+        <meta name="google-site-verification" content="W6SJ3S45yhnjzV6ISUMCTXl_QVX5woQZ7jO3bsahONQ" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4W5MG3DG4T">
 
-    Remove
+    </script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-4W5MG3DG4T');
+        </script>
+
+        <script data-ad-client="ca-pub-7131725540181116" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+
+    </script>
+        ```
+
+        Remove
 
 -   before `</body>`
 
-    goback
+        goback
 
-    ```
-    <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
-          <?php
-            $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-            echo "<a href='$url'>
-</a>
-    ```
+        ```
+        <input type="button" style="position: fixed;top: 10px;right: 10px;width:80px;color:white;font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
+              <?php
+                $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+                echo "<a href='$url'>
 
-    Remove
+    </a>
+        ```
+
+        Remove
 
 -   before `</head>`
 
-    prism
+        prism
 
-    ```
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        ```
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js" integrity="sha512-axJX7DJduStuBB8ePC8ryGzacZPr3rdLaIDZitiEgWWk2gsXxEFlm4UW0iNzj2h3wp5mOylgHAzBzM4nRSvTZA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <script async defer src="./js/prism.js">
-</script>
-    <style>
-    code[class*="language-"],
-    pre[class*="language-"] {
-    	color: white;
-    	background: none;
-    	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    	font-size: 1em;
-    	text-align: left;
-    	text-shadow: 0 -.1em .2em black;
-    	white-space: pre;
-    	word-spacing: normal;
-    	word-break: normal;
-    	word-wrap: normal;
-    	line-height: 1.5;
+    </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-dark.min.css" integrity="sha512-Njdz7T/p6Ud1FiTMqH87bzDxaZBsVNebOWmacBjMdgWyeIhUSFU4V52oGwo3sT+ud+lyIE98sS291/zxBfozKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    	-moz-tab-size: 4;
-    	-o-tab-size: 4;
-    	tab-size: 4;
+        <script async defer src="./js/prism.js">
 
-    	-webkit-hyphens: none;
-    	-moz-hyphens: none;
-    	-ms-hyphens: none;
-    	hyphens: none;
-    }
+    </script>
+        <style>
+        code[class*="language-"],
+        pre[class*="language-"] {
+        	color: white;
+        	background: none;
+        	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        	font-size: 1em;
+        	text-align: left;
+        	text-shadow: 0 -.1em .2em black;
+        	white-space: pre;
+        	word-spacing: normal;
+        	word-break: normal;
+        	word-wrap: normal;
+        	line-height: 1.5;
 
-    pre[class*="language-"],
-    :not(pre) > code[class*="language-"] {
-    	background: hsl(0, 0%, 8%); /* #141414 */
-    }
+        	-moz-tab-size: 4;
+        	-o-tab-size: 4;
+        	tab-size: 4;
 
-    /* Code blocks */
-    pre[class*="language-"] {
-    	border-radius: .5em;
-    	border: .3em solid hsl(0, 0%, 33%); /* #282A2B */
-    	box-shadow: 1px 1px .5em black inset;
-    	margin: .5em 0;
-    	overflow: auto;
-    	padding: 1em;
-    }
+        	-webkit-hyphens: none;
+        	-moz-hyphens: none;
+        	-ms-hyphens: none;
+        	hyphens: none;
+        }
 
-    pre[class*="language-"]::-moz-selection {
-    	/* Firefox */
-    	background: hsl(200, 4%, 16%); /* #282A2B */
-    }
+        pre[class*="language-"],
+        :not(pre) > code[class*="language-"] {
+        	background: hsl(0, 0%, 8%); /* #141414 */
+        }
 
-    pre[class*="language-"]::selection {
-    	/* Safari */
-    	background: hsl(200, 4%, 16%); /* #282A2B */
-    }
+        /* Code blocks */
+        pre[class*="language-"] {
+        	border-radius: .5em;
+        	border: .3em solid hsl(0, 0%, 33%); /* #282A2B */
+        	box-shadow: 1px 1px .5em black inset;
+        	margin: .5em 0;
+        	overflow: auto;
+        	padding: 1em;
+        }
 
-    /* Text Selection colour */
-    pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-    code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-    	text-shadow: none;
-    	background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
-    }
+        pre[class*="language-"]::-moz-selection {
+        	/* Firefox */
+        	background: hsl(200, 4%, 16%); /* #282A2B */
+        }
 
-    pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-    code[class*="language-"]::selection, code[class*="language-"] ::selection {
-    	text-shadow: none;
-    	background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
-    }
+        pre[class*="language-"]::selection {
+        	/* Safari */
+        	background: hsl(200, 4%, 16%); /* #282A2B */
+        }
 
-    /* Inline code */
-    :not(pre) > code[class*="language-"] {
-    	border-radius: .3em;
-    	border: .13em solid hsl(0, 0%, 33%); /* #545454 */
-    	box-shadow: 1px 1px .3em -.1em black inset;
-    	padding: .15em .2em .05em;
-    	white-space: normal;
-    }
+        /* Text Selection colour */
+        pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+        code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+        	text-shadow: none;
+        	background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
+        }
 
-    .token.comment,
-    .token.prolog,
-    .token.doctype,
-    .token.cdata {
-    	color: hsl(0, 0%, 47%); /* #777777 */
-    }
+        pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+        code[class*="language-"]::selection, code[class*="language-"] ::selection {
+        	text-shadow: none;
+        	background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
+        }
 
-    .token.punctuation {
-    	opacity: .7;
-    }
+        /* Inline code */
+        :not(pre) > code[class*="language-"] {
+        	border-radius: .3em;
+        	border: .13em solid hsl(0, 0%, 33%); /* #545454 */
+        	box-shadow: 1px 1px .3em -.1em black inset;
+        	padding: .15em .2em .05em;
+        	white-space: normal;
+        }
 
-    .token.namespace {
-    	opacity: .7;
-    }
+        .token.comment,
+        .token.prolog,
+        .token.doctype,
+        .token.cdata {
+        	color: hsl(0, 0%, 47%); /* #777777 */
+        }
 
-    .token.tag,
-    .token.boolean,
-    .token.number,
-    .token.deleted {
-    	color: hsl(14, 58%, 55%); /* #CF6A4C */
-    }
+        .token.punctuation {
+        	opacity: .7;
+        }
 
-    .token.keyword,
-    .token.property,
-    .token.selector,
-    .token.constant,
-    .token.symbol,
-    .token.builtin {
-    	color: hsl(53, 89%, 79%); /* #F9EE98 */
-    }
+        .token.namespace {
+        	opacity: .7;
+        }
 
-    .token.attr-name,
-    .token.attr-value,
-    .token.string,
-    .token.char,
-    .token.operator,
-    .token.entity,
-    .token.url,
-    .language-css .token.string,
-    .style .token.string,
-    .token.variable,
-    .token.inserted {
-    	color: hsl(76, 21%, 52%); /* #8F9D6A */
-    }
+        .token.tag,
+        .token.boolean,
+        .token.number,
+        .token.deleted {
+        	color: hsl(14, 58%, 55%); /* #CF6A4C */
+        }
 
-    .token.atrule {
-    	color: hsl(218, 22%, 55%); /* #7587A6 */
-    }
+        .token.keyword,
+        .token.property,
+        .token.selector,
+        .token.constant,
+        .token.symbol,
+        .token.builtin {
+        	color: hsl(53, 89%, 79%); /* #F9EE98 */
+        }
 
-    .token.regex,
-    .token.important {
-    	color: hsl(42, 75%, 65%); /* #E9C062 */
-    }
+        .token.attr-name,
+        .token.attr-value,
+        .token.string,
+        .token.char,
+        .token.operator,
+        .token.entity,
+        .token.url,
+        .language-css .token.string,
+        .style .token.string,
+        .token.variable,
+        .token.inserted {
+        	color: hsl(76, 21%, 52%); /* #8F9D6A */
+        }
 
-    .token.important,
-    .token.bold {
-    	font-weight: bold;
-    }
-    .token.italic {
-    	font-style: italic;
-    }
+        .token.atrule {
+        	color: hsl(218, 22%, 55%); /* #7587A6 */
+        }
 
-    .token.entity {
-    	cursor: help;
-    }
+        .token.regex,
+        .token.important {
+        	color: hsl(42, 75%, 65%); /* #E9C062 */
+        }
 
-    pre[data-line] {
-    	padding: 1em 0 1em 3em;
-    	position: relative;
-    }
+        .token.important,
+        .token.bold {
+        	font-weight: bold;
+        }
+        .token.italic {
+        	font-style: italic;
+        }
 
-    /* Markup */
-    .language-markup .token.tag,
-    .language-markup .token.attr-name,
-    .language-markup .token.punctuation {
-    	color: hsl(33, 33%, 52%); /* #AC885B */
-    }
+        .token.entity {
+        	cursor: help;
+        }
 
-    /* Make the tokens sit above the line highlight so the colours don't look faded. */
-    .token {
-    	position: relative;
-    	z-index: 1;
-    }
+        pre[data-line] {
+        	padding: 1em 0 1em 3em;
+        	position: relative;
+        }
 
-    .line-highlight {
-    	background: hsla(0, 0%, 33%, 0.25); /* #545454 */
-    	background: linear-gradient(to right, hsla(0, 0%, 33%, .1) 70%, hsla(0, 0%, 33%, 0)); /* #545454 */
-    	border-bottom: 1px dashed hsl(0, 0%, 33%); /* #545454 */
-    	border-top: 1px dashed hsl(0, 0%, 33%); /* #545454 */
-    	left: 0;
-    	line-height: inherit;
-    	margin-top: 0.75em; /* Same as .prism's padding-top */
-    	padding: inherit 0;
-    	pointer-events: none;
-    	position: absolute;
-    	right: 0;
-    	white-space: pre;
-    	z-index: 0;
-    }
+        /* Markup */
+        .language-markup .token.tag,
+        .language-markup .token.attr-name,
+        .language-markup .token.punctuation {
+        	color: hsl(33, 33%, 52%); /* #AC885B */
+        }
 
-    .line-highlight:before,
-    .line-highlight[data-end]:after {
-    	background-color: hsl(215, 15%, 59%); /* #8794A6 */
-    	border-radius: 999px;
-    	box-shadow: 0 1px white;
-    	color: hsl(24, 20%, 95%); /* #F5F2F0 */
-    	content: attr(data-start);
-    	font: bold 65%/1.5 sans-serif;
-    	left: .6em;
-    	min-width: 1em;
-    	padding: 0 .5em;
-    	position: absolute;
-    	text-align: center;
-    	text-shadow: none;
-    	top: .4em;
-    	vertical-align: .3em;
-    }
+        /* Make the tokens sit above the line highlight so the colours don't look faded. */
+        .token {
+        	position: relative;
+        	z-index: 1;
+        }
 
-    .line-highlight[data-end]:after {
-    	bottom: .4em;
-    	content: attr(data-end);
-    	top: auto;
-    }
+        .line-highlight {
+        	background: hsla(0, 0%, 33%, 0.25); /* #545454 */
+        	background: linear-gradient(to right, hsla(0, 0%, 33%, .1) 70%, hsla(0, 0%, 33%, 0)); /* #545454 */
+        	border-bottom: 1px dashed hsl(0, 0%, 33%); /* #545454 */
+        	border-top: 1px dashed hsl(0, 0%, 33%); /* #545454 */
+        	left: 0;
+        	line-height: inherit;
+        	margin-top: 0.75em; /* Same as .prism's padding-top */
+        	padding: inherit 0;
+        	pointer-events: none;
+        	position: absolute;
+        	right: 0;
+        	white-space: pre;
+        	z-index: 0;
+        }
 
-    </style>
-    ```
+        .line-highlight:before,
+        .line-highlight[data-end]:after {
+        	background-color: hsl(215, 15%, 59%); /* #8794A6 */
+        	border-radius: 999px;
+        	box-shadow: 0 1px white;
+        	color: hsl(24, 20%, 95%); /* #F5F2F0 */
+        	content: attr(data-start);
+        	font: bold 65%/1.5 sans-serif;
+        	left: .6em;
+        	min-width: 1em;
+        	padding: 0 .5em;
+        	position: absolute;
+        	text-align: center;
+        	text-shadow: none;
+        	top: .4em;
+        	vertical-align: .3em;
+        }
 
-    Remove
+        .line-highlight[data-end]:after {
+        	bottom: .4em;
+        	content: attr(data-end);
+        	top: auto;
+        }
+
+        </style>
+        ```
+
+        Remove
 
 -   before `</body>`
 
@@ -714,24 +728,25 @@ Inject analytics or other scripts into the HTML of your site.
 
 -   before `</head>`
 
-    algolia
+        algolia
 
-    ```
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
-</script>
-    <script type="text/javascript">
-      algoliasearchNetlify({
-        appId: 'O6OT9G9U8Z',
-        apiKey: 'b0cb3d390176e1ff4bd1ecb12fc15730',
-        siteId: 'a1b7ee1a-11a7-4bd2-a341-2260656e216f',
-        branch: 'master',
-        selector: 'div#search',
-      });
+        ```
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+
     </script>
-    ```
+        <script type="text/javascript">
+          algoliasearchNetlify({
+            appId: 'O6OT9G9U8Z',
+            apiKey: 'b0cb3d390176e1ff4bd1ecb12fc15730',
+            siteId: 'a1b7ee1a-11a7-4bd2-a341-2260656e216f',
+            branch: 'master',
+            selector: 'div#search',
+          });
+        </script>
+        ```
 
-    Remove
+        Remove
 
 [Learn more about snippet injection in the docs](https://www.netlify.com/docs/inject-analytics-snippets)
 

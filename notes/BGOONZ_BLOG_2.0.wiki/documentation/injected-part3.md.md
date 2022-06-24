@@ -8,45 +8,48 @@ Inject analytics or other scripts into the HTML of your site.
 
 -   before `</body>`
 
-    blm
+        blm
 
-    ```
-    <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
+        ```
+        <!-- Insert makerbadge.js (download or use ☁️cloud version) -->
 
-    <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
-</script>
+        <script type="text/javascript" src="https://makerbadge.s3.amazonaws.com/blmbadge.js">
 
-    <!-- Initialise MakerBadge with options -->
-
-    <script>
-      BLMBadge.init({
-           layout:1,
-           theme:'dark',
-           promoText : 'Send a donation '+String.fromCodePoint(0x2192),
-           promoLink : 'https://minnesotafreedomfund.org/',
-           message : 'To be silent is to be complicit. Black lives matter.',
-           title : '#BlackLivesMatter',
-           imageAlt: "Black Lives Matter Badge"
-    })
     </script>
-    ```
 
-    Remove
+        <!-- Initialise MakerBadge with options -->
+
+        <script>
+          BLMBadge.init({
+               layout:1,
+               theme:'dark',
+               promoText : 'Send a donation '+String.fromCodePoint(0x2192),
+               promoLink : 'https://minnesotafreedomfund.org/',
+               message : 'To be silent is to be complicit. Black lives matter.',
+               title : '#BlackLivesMatter',
+               imageAlt: "Black Lives Matter Badge"
+        })
+        </script>
+        ```
+
+        Remove
 
 -   before `</body>`
 
-    addthis
+        addthis
 
-    ```
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
-</script>
+        ```
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
 
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
-</script>
-    ```
+    </script>
 
-    Remove
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946">
+
+    </script>
+        ```
+
+        Remove
 
 -   before `</head>`
 
@@ -60,112 +63,118 @@ Inject analytics or other scripts into the HTML of your site.
 
 -   before `</body>`
 
-    hit counter
+        hit counter
 
-    ```
-    <div id="sfcfbp12lg5qfuxxlsmlznhmyuh5qc33xr2">
-</div>
-<script type="text/javascript" src="https://counter5.stat.ovh/private/counter.js?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2&down=async" async>
-</script>
-<br>
-<a href="https://www.freecounterstat.com">page counter</a>
-<noscript>
-<a href="https://www.freecounterstat.com" title="page counter">
-<img src="https://counter5.stat.ovh/private/freecounterstat.php?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2" border="0" title="page counter" alt="page counter">
-</a>
-</noscript>
-    ```
+        ```
+        <div id="sfcfbp12lg5qfuxxlsmlznhmyuh5qc33xr2">
 
-    Remove
+    </div>
+    <script type="text/javascript" src="https://counter5.stat.ovh/private/counter.js?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2&down=async" async>
+    </script>
+    <br>
+    <a href="https://www.freecounterstat.com">page counter</a>
+    <noscript>
+    <a href="https://www.freecounterstat.com" title="page counter">
+    <img src="https://counter5.stat.ovh/private/freecounterstat.php?c=fbp12lg5qfuxxlsmlznhmyuh5qc33xr2" border="0" title="page counter" alt="page counter">
+    </a>
+    </noscript>
+        ```
 
--   before `</body>`
-
-    go-back
-
-    ```
-    <input type="button" style="position: absolute;top: 10px;right: 10px;width:80px;color:rgb(147, 13, 13);font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
-          <?php
-            $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-            echo "<a href='$url'>
-</a>";
-          ?>
-    ```
-
-    Remove
+        Remove
 
 -   before `</body>`
 
-    clock
+        go-back
 
-    ```
-    <div class="cleanslate w24tz-current-time w24tz-small" style="display: inline-block !important; visibility: hidden !important; min-width:200px !important; min-height:100px !important;">
-<p>
-<a href="//24timezones.com/time-zone/et" style="text-decoration: none" class="clock24" id="tz24-1627974679-tzest-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMCIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjEwOGVjMTc3NjAwMiIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="EST time now" target="_blank">EST</a>
-</p>
-<div id="clock_block_cb6108ec1776002">
-</div>
-</div>
-    <script type="text/javascript" src="//w.24timezones.com/l.js" async>
-</script>
+        ```
+        <input type="button" style="position: absolute;top: 10px;right: 10px;width:80px;color:rgb(147, 13, 13);font-weight:bold;background-color:rgba(0, 0, 0, 0.856); border-radius:15px;" value="Go Back" onclick="history.back(-1)" />
+              <?php
+                $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+                echo "<a href='$url'>
+
+    </a>";
+    ?>
     ```
 
-    Remove
+        Remove
 
 -   before `</body>`
 
-    algolia
+        clock
 
-    ```
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
-</script>
-    <script type="text/javascript">
-          algoliasearchNetlify({
-            appId: "BAGY237H21",
-            apiKey: "5f5a2d1bb109c79803ca95250ca3496c",
-            siteId: "835ad7b5-37ce-4a32-824d-f3b0d3eab8e5",
-            branch: "master",
-            selector: "div#search",
-             });
-        </script>
+        ```
+        <div class="cleanslate w24tz-current-time w24tz-small" style="display: inline-block !important; visibility: hidden !important; min-width:200px !important; min-height:100px !important;">
 
-    ```
+    <p>
+    <a href="//24timezones.com/time-zone/et" style="text-decoration: none" class="clock24" id="tz24-1627974679-tzest-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMCIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjEwOGVjMTc3NjAwMiIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="EST time now" target="_blank">EST</a>
+    </p>
+    <div id="clock_block_cb6108ec1776002">
+    </div>
+    </div>
+        <script type="text/javascript" src="//w.24timezones.com/l.js" async>
+    </script>
+        ```
 
-    Remove
+        Remove
+
+-   before `</body>`
+
+        algolia
+
+        ```
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
+
+    </script>
+        <script type="text/javascript">
+              algoliasearchNetlify({
+                appId: "BAGY237H21",
+                apiKey: "5f5a2d1bb109c79803ca95250ca3496c",
+                siteId: "835ad7b5-37ce-4a32-824d-f3b0d3eab8e5",
+                branch: "master",
+                selector: "div#search",
+                 });
+            </script>
+
+        ```
+
+        Remove
 
 -   before `</head>`
 
-    algolia-cdn
+        algolia-cdn
 
-    ```
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
-</script>
-    ```
+        ```
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
 
-    Remove
+    </script>
+        ```
+
+        Remove
 
 -   before `</body>`
 
-    algolia2
+        algolia2
 
-    ```
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
-</script>
-    <script type="text/javascript">
-          algoliasearchNetlify({
-            appId: "BAGY237H21",
-            apiKey: "5f5a2d1bb109c79803ca95250ca3496c",
-            siteId: "835ad7b5-37ce-4a32-824d-f3b0d3eab8e5",
-            branch: "master",
-            selector: "div#search",
-             });
-        </script>
+        ```
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js">
 
-    ```
+    </script>
+        <script type="text/javascript">
+              algoliasearchNetlify({
+                appId: "BAGY237H21",
+                apiKey: "5f5a2d1bb109c79803ca95250ca3496c",
+                siteId: "835ad7b5-37ce-4a32-824d-f3b0d3eab8e5",
+                branch: "master",
+                selector: "div#search",
+                 });
+            </script>
 
-    Remove
+        ```
+
+        Remove
 
 [Learn more about snippet injection in the docs](https://www.netlify.com/docs/inject-analytics-snippets)
 
